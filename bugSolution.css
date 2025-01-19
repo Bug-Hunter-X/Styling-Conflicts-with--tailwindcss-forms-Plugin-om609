@@ -1,0 +1,18 @@
+/* bugSolution.css */
+
+/* Use higher specificity to override @tailwindcss/forms styles where needed */
+input[type="text"]::-webkit-inner-spin-button, 
+input[type="text"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Example: Overriding the default border style of the select element */
+select {
+  @apply border-gray-300 border-2 rounded px-3 py-2;
+}
+
+/* Example: Adding custom styles to a button that might be affected by the plugin */
+.custom-button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+} 
